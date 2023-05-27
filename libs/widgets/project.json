@@ -2,7 +2,7 @@
   "name": "widgets",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/widgets/src",
-  "prefix": "fchat-admin",
+  "prefix": "fc",
   "tags": [],
   "projectType": "library",
   "targets": {

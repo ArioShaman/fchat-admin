@@ -7,10 +7,9 @@ import {
   TuiRootModule,
   TuiDialogModule,
   TuiAlertModule,
-  TuiSvgModule,
-  TuiButtonModule,
 } from '@taiga-ui/core';
-import { TuiAppBarModule } from '@taiga-ui/addon-mobile';
+
+import { NavBarModule } from '@fchat-admin/widgets';
 
 import { AppComponent } from './app.component';
 import { pagesRoutes } from './pages';
@@ -29,9 +28,7 @@ import { pagesRoutes } from './pages';
       TuiRootModule,
       TuiDialogModule,
       TuiAlertModule,
-      TuiAppBarModule,
-      TuiSvgModule,
-      TuiButtonModule,
+      NavBarModule,
 ],
   providers: [],
   bootstrap: [AppComponent],

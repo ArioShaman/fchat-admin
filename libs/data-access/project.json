@@ -2,7 +2,7 @@
   "name": "data-access",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/data-access/src",
-  "prefix": "fchat-admin",
+  "prefix": "fc",
   "tags": [],
   "projectType": "library",
   "targets": {

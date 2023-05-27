@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "fchat-admin",
+            "prefix": "fc",
             "style": "kebab-case"
           }
         ]

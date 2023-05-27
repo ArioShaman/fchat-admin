@@ -1,0 +1,30 @@
+<header>
+  <tui-app-bar>
+    <button
+      tuiIconButton
+      tuiSlot="left"
+      icon="tuiIconMenuLarge"
+      title="Menu"
+      (click)="toggle(true)"
+      (tuiActiveZoneChange)="toggle($event)"
+    >
+      <div *tuiSidebar="opened(); direction: 'left'">
+        <a
+          tuiLink
+          rel="noreferrer"
+          target="_blank"
+          class="link"
+        >
+          Some link
+        </a>
+      </div>
+    </button>
+
+    <label
+      tuiLabel="AppBar"
+      class="reversed"
+    >
+      Food&Chat
+    </label>
+  </tui-app-bar>
+</header>

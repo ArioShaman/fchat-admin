@@ -2,7 +2,7 @@
   "name": "admin",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "fchat-admin",
+  "prefix": "fc",
   "sourceRoot": "apps/admin/src",
   "tags": [],
   "targets": {

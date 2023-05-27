@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@fchat-admin/data-access": ["libs/data-access/src/index.ts"],
+      "@fchat-admin/entities": ["libs/entities/src/index.ts"],
+      "@fchat-admin/features": ["libs/features/src/index.ts"],
+      "@fchat-admin/types": ["libs/types/src/index.ts"],
+      "@fchat-admin/widgets": ["libs/widgets/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

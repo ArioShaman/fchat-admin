@@ -10,8 +10,13 @@ import { TuiAppBarModule, TuiSidebarModule } from '@taiga-ui/addon-mobile';
 import { TuiAccordionModule } from '@taiga-ui/kit';
 import { TuiActiveZoneModule } from '@taiga-ui/cdk';
 
+import { SliceDirective } from '@fchat-admin/shared';
+
 @NgModule({
-  declarations: [NavBarWidget],
+  declarations: [
+    NavBarWidget,
+    SliceDirective
+  ],
   exports: [NavBarWidget],
   imports: [
     CommonModule,

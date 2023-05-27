@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.red-border {
+  transition: 0.3s;
+
+  &:hover {
+    border: 4px solid red;
+    box-sizing: content-box;
+
+    .slice-tag {
+      display: block;
+    }
+  }
+
+  .slice-tag {
+    display: none;
+  }
+}
+
+.slice-tag {
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: auto;
+  background-color: red;
+  color: white;
+  padding: 5px;
+}

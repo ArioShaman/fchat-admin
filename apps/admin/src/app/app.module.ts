@@ -1,8 +1,17 @@
-import { TuiRootModule, TuiDialogModule, TuiAlertModule } from "@taiga-ui/core";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {
+  TuiRootModule,
+  TuiDialogModule,
+  TuiAlertModule,
+  TuiSvgModule,
+  TuiButtonModule,
+} from '@taiga-ui/core';
+import { TuiAppBarModule } from '@taiga-ui/addon-mobile';
+
 import { AppComponent } from './app.component';
 import { pagesRoutes } from './pages';
 
@@ -19,7 +28,10 @@ import { pagesRoutes } from './pages';
       BrowserAnimationsModule,
       TuiRootModule,
       TuiDialogModule,
-      TuiAlertModule
+      TuiAlertModule,
+      TuiAppBarModule,
+      TuiSvgModule,
+      TuiButtonModule,
 ],
   providers: [],
   bootstrap: [AppComponent],

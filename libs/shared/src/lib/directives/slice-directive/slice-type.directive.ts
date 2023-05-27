@@ -5,7 +5,8 @@ type SliceType = null
   | 'entity'
   | 'feature'
   | 'widget'
-  | 'page';
+  | 'page'
+  | 'shared';
 
 @Directive({
   selector: '[slice]',
@@ -13,6 +14,9 @@ type SliceType = null
 export class SliceDirective {
   @Input()
   sliceType: SliceType = null
+
+  @Input()
+  position = 'right';
 
   @HostBinding("class")
   elementClass = "red-border";
@@ -29,6 +33,12 @@ export class SliceDirective {
   ngAfterViewInit(): void {
     const child = this.document.createElement('div');
     child.className = 'slice-tag';
+    
+    // TODO hostbinding class
+    if (this.position === 'left') {
+      child.className = child.className + ' left';
+    }
+
     child.textContent = this.sliceType;
     this.renderer.appendChild(this.elementRef.nativeElement, child);
   }

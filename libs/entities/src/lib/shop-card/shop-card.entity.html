@@ -1,0 +1,11 @@
+<tui-island slice sliceType="entity">
+  <h3 class="tui-island__title">
+    {{ shop.name }}
+  </h3>
+  <p class="tui-island__paragraph">
+    {{ shop.description }}
+  </p>
+  <p class="tui-island__paragraph tui-island__paragraph_link">
+    <ng-content select="fc-shop-card-action"></ng-content>
+  </p>
+</tui-island>

@@ -1,0 +1,25 @@
+<tui-hosted-dropdown
+  tuiDropdownAlign="right"
+  [sided]="true"
+  [content]="dropdown"
+  [(open)]="open"
+>
+  <tui-svg src="tuiIconMoreHorizontal"></tui-svg>
+</tui-hosted-dropdown>
+
+<ng-template
+  #dropdown
+  let-close="close"
+>
+  <tui-data-list slice sliceType="feature">
+    <tui-opt-group>
+      <button
+        *ngFor="let item of items"
+        tuiOption
+        (click)="onClick()"
+      >
+        {{ item }}
+      </button>
+    </tui-opt-group>
+  </tui-data-list>
+</ng-template>

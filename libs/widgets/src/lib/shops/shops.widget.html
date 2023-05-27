@@ -1,0 +1,13 @@
+<div
+  slice
+  sliceType="widget"
+  class="tui-space_bottom-10 shops"
+>
+  <ng-container *ngFor="let shop of shops">
+    <fc-shop-card
+      [shop]="shop"
+    >
+      <fc-shop-card-action></fc-shop-card-action>
+    </fc-shop-card>
+  </ng-container>
+</div>

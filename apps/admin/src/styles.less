@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 .red-border {
   transition: 0.3s;
+  z-index: 3000;
+  position: relative;
 
   &:hover {
     border: 4px solid red;
@@ -19,9 +21,24 @@
 .slice-tag {
   position: absolute;
   right: 0;
+  bottom: -30px;
   height: 20px;
   width: auto;
   background-color: red;
   color: white;
   padding: 5px;
+
+  &.left {
+    left: 0 !important;
+    right: inherit !important;
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  min-height: 50vh;
+}
+
+a {
+  position: relative;
 }

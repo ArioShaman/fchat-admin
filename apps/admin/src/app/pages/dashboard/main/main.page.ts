@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './main.page.html',
   styleUrls: ['./main.page.less'],
 })
-export class MainPage {}
+export class MainPage {
+  activeItemIndex = 0;
+}

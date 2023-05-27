@@ -1,3 +1,28 @@
-<div slice sliceType="page">
-  <p>main page works!</p>
+<div slice sliceType="page" class="page-wrapper">
+  <tui-tabs [(activeItemIndex)]="activeItemIndex">
+    <button
+      tuiTab
+    >
+      Пространства
+    </button>
+
+    <button
+      tuiTab
+    >
+      Заведения
+    </button>
+  </tui-tabs>
+
+  <div>
+    <ng-container [ngSwitch]="activeItemIndex">
+      <ng-container *ngSwitchCase="0">
+        <fc-workspaces></fc-workspaces>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="1">
+        <fc-shops></fc-shops>
+      </ng-container>
+    </ng-container>
+
+  </div>
 </div>

@@ -8,16 +8,7 @@
       (click)="toggle(true)"
       (tuiActiveZoneChange)="toggle($event)"
     >
-      <div *tuiSidebar="opened(); direction: 'left'">
-        <a
-          tuiLink
-          rel="noreferrer"
-          target="_blank"
-          class="link"
-        >
-          Some link
-        </a>
-      </div>
+    <fc-side-bar [opened]="opened"></fc-side-bar>
     </button>
 
     <label

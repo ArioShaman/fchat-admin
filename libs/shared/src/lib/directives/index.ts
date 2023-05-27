@@ -1,1 +1,1 @@
-export * from './slice-type.directive';
+export * from './slice-directive';

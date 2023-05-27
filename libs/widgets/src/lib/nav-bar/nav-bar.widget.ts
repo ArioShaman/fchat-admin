@@ -10,8 +10,6 @@ export class NavBarWidget {
   opened = signal(false);
 
   toggle(value: any): void {
-    console.log('cock');
-
     this.opened.set(value)
   }
 }

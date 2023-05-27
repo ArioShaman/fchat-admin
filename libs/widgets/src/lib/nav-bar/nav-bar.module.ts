@@ -6,16 +6,16 @@ import {
   TuiSvgModule,
   TuiButtonModule,
 } from '@taiga-ui/core';
-import { TuiAppBarModule, TuiSidebarModule } from '@taiga-ui/addon-mobile';
+import { TuiAppBarModule } from '@taiga-ui/addon-mobile';
 import { TuiAccordionModule } from '@taiga-ui/kit';
 import { TuiActiveZoneModule } from '@taiga-ui/cdk';
 
-import { SliceDirective } from '@fchat-admin/shared';
+import { SliceTypeDirectiveModule } from '@fchat-admin/shared';
+import { SideBarModule } from '../side-bar';
 
 @NgModule({
   declarations: [
-    NavBarWidget,
-    SliceDirective
+    NavBarWidget
   ],
   exports: [NavBarWidget],
   imports: [
@@ -24,8 +24,9 @@ import { SliceDirective } from '@fchat-admin/shared';
     TuiSvgModule,
     TuiButtonModule,
     TuiAccordionModule,
-    TuiSidebarModule,
     TuiActiveZoneModule,
+    SliceTypeDirectiveModule,
+    SideBarModule
   ],
 })
 export class NavBarModule {}

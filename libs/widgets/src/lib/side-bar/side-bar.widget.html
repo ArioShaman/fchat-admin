@@ -1,0 +1,27 @@
+<div
+  slice
+  sliceType="widget"
+  *tuiSidebar="opened();
+  direction: 'left'"
+  class="sidebar"
+>
+  <a
+    tuiLink
+    rel="noreferrer"
+    class="link"
+    [routerLink]="paths.dashboard"
+    (click)="close()"
+  >
+    Dashboard
+  </a>
+
+  <a
+    tuiLink
+    rel="noreferrer"
+    class="link"
+    [routerLink]="paths.settings"
+    (click)="close()"
+  >
+    Settings
+  </a>
+</div>
